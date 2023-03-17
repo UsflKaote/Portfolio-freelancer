@@ -22,8 +22,6 @@ if (localStorage.getItem('darkMode') === 'dark') {
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (event) => {
   const newColorScheme = event.matches ? "dark" : 'light';
 
-  alert('Change!!!')
-
   if (newColorScheme === 'dark') {
     btnDarkMode.classList.add('dark-mode-btn--active');
     document.body.classList.add("dark");

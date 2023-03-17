@@ -14,6 +14,7 @@ font-family: 'Poppins', sans-serif;
   --black-border: #26292D;
   --white: #fff;
   --red: #c43333;
+  --grey: #f7f7f7;
 
   --text-color: var(--black);
 
@@ -24,6 +25,7 @@ font-family: 'Poppins', sans-serif;
 
   /* Light mode */
   --page-bg: var(--white);
+  --page-bg-2: var(--grey);
   --text-color: var(--black);
 
   --title-1: var(--accent);
@@ -35,7 +37,8 @@ font-family: 'Poppins', sans-serif;
 
 .dark {
   /* Dark mode */
-  --page-bg: #252526;
+  --page-bg: #222222;
+  --grey: #252526;
   --text-color: var(--white);
 
   --title-1: var(--white);
@@ -64,9 +67,30 @@ html, body {
   max-width: 1200px;
 }
 
+.container-2 {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .section {
   padding: 80px 0;
+}
 
+.section-1 {
+  padding: 80px 0;
+  background-color: var(--grey);
+}
+
+.section-2 {
+  padding: 80px 0;
 }
 
 .title-1 {
@@ -83,6 +107,16 @@ html, body {
   line-height: 1.3;
   margin-bottom: 20px;
   font-weight: 700;
+}
+
+.anime-card {
+  margin: 20px;
+  width: 355px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: row;
 }
 
 .none {
@@ -197,7 +231,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 695px;
+  min-height: 700px;
   padding: 40px 0;
 
   background-color: var(--dark-bg);
@@ -344,7 +378,7 @@ html, body {
   top: 1px;
 }
 
-/* Content list*/
+/* Content list */
 
 .content-list {
   margin: 0 auto;
@@ -548,5 +582,6 @@ html, body {
     font-size: 12px;
   }
 }
+
 
 
